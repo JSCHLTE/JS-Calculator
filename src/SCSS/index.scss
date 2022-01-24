@@ -1,0 +1,52 @@
+@import "global";
+@import "variables";
+
+.container {
+    max-width: 400px;
+    margin: 20vh auto 0 auto;
+}
+
+#display {
+    text-align: right;
+    height: 100px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border-top: 1px solid $off-white;
+    border-left: 1px solid $off-white;
+    border-right: 1px solid $off-white;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px solid $off-white;
+    border-left: 1px solid $off-white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div {
+        border-top: 1px solid $off-white;
+        border-right: 1px solid $off-white;
+    }
+}
+
+.button {
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+
+    &:hover {
+        background: $black;
+    }
+}
+
+#equal {
+    background: $equal;
+    color: $white;
+
+    &:hover {
+        background: $equal-hover;
+    }
+}

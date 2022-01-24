@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #202020;
+  color: #fff;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20vh auto 0 auto;
+}
+
+#display {
+  text-align: right;
+  height: 100px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  border-top: 1px solid #999;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.buttons {
+  display: -ms-grid;
+  display: grid;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons div {
+  border-top: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+.button {
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #000;
+}
+
+#equal {
+  background: #e29300;
+  color: #fff;
+}
+
+#equal:hover {
+  background: #c37f00;
+}
+/*# sourceMappingURL=index.css.map */
